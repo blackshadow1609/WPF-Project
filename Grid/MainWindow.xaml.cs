@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF
+namespace Grid
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -24,11 +24,7 @@ namespace WPF
 		{
 			InitializeComponent();
 
-			this.Icon = new BitmapImage(new Uri("D:\\Users\\wwwbl\\source\\repos\\WPF\\ico\\wpf_button.ico")); /*Добавление значка в главное окно WPF-приложения*/
-		}
-		public void OnButtonStartClick(object sender, EventArgs e)
-		{
-			btnStart.Content = btnStart.Content == "Stop" ? "Start" : "Stop";
+			this.Icon = new BitmapImage(new Uri("D:\\Users\\wwwbl\\source\\repos\\WPF\\ico\\grid_icon.ico")); /*Добавление значка в главное окно WPF-приложения*/
 		}
 	}
 }
