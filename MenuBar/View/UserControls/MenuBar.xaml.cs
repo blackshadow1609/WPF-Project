@@ -27,8 +27,8 @@ namespace MenuBar.View.UserControls
 
 		private void MenuItem_Click(object sender, RoutedEventArgs e)
 		{
-			Window parentWindow = Window.GetWindow((DependencyObject)sender);
-			parentWindow.Close();
+			Window window = Window.GetWindow(this);
+			window.Close();
 		}
     }
 }
