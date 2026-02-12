@@ -13,18 +13,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MenuBar
+namespace MenuBar.View.UserControls
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for MenuBar.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class MenuBar : UserControl
 	{
-		public MainWindow()
+		public MenuBar()
 		{
 			InitializeComponent();
-
-			this.Icon = new BitmapImage(new Uri("D:\\Users\\wwwbl\\source\\repos\\WPF\\ico\\menu.ico")); /*Добавление значка в главное окно WPF-приложения*/
 		}
-	}
+
+		private void MenuItem_Click(object sender, RoutedEventArgs e)
+		{
+			Window parentWindow = Window.GetWindow((DependencyObject)sender);
+			parentWindow.Close();
+		}
+    }
 }
