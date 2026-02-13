@@ -6,20 +6,38 @@
         xmlns:local="clr-namespace:CustomTextboxControl"
         xmlns:customTextboxControl="clr-namespace:CustomTextboxControl.View.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300">
-    <Grid>
+        Title="MainWindow" Height="450" Width="350"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20" VerticalAlignment="Center">
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <customTextboxControl:ClearableTextBox Grid.Row="1" Width="250" Height="40" Placeholder="Last Name"/>
-        <customTextboxControl:ClearableTextBox Grid.Row="2" Width="250" Height="40" Placeholder="First Name"/>
-        <customTextboxControl:ClearableTextBox Grid.Row="3" Width="250" Height="40" Placeholder="Birth date"/>
-        <customTextboxControl:ClearableTextBox Grid.Row="4" Width="250" Height="40" Placeholder="E-mail"/>
-        <customTextboxControl:ClearableTextBox Grid.Row="5" Width="250" Height="40" Placeholder="Phone number"/>
+
+        <customTextboxControl:ClearableTextBox x:Name="box1" Grid.Row="0" 
+                                               Width="280" Height="40" 
+                                               Placeholder="Last Name" 
+                                               Margin="0,0,0,10"/>
+        <customTextboxControl:ClearableTextBox x:Name="box2" Grid.Row="1" 
+                                               Width="280" Height="40" 
+                                               Placeholder="First Name" 
+                                               Margin="0,0,0,10"/>
+        <customTextboxControl:ClearableTextBox x:Name="box3" Grid.Row="2" 
+                                               Width="280" Height="40" 
+                                               Placeholder="Birth date" 
+                                               Margin="0,0,0,10"/>
+        <customTextboxControl:ClearableTextBox x:Name="box4" Grid.Row="3" 
+                                               Width="280" Height="40" 
+                                               Placeholder="E-mail" 
+                                               Margin="0,0,0,10"/>
+        <customTextboxControl:ClearableTextBox x:Name="box5" Grid.Row="4" 
+                                               Width="280" Height="40" 
+                                               Placeholder="Phone number" 
+                                               Margin="0,0,0,10"/>
     </Grid>
 </Window>

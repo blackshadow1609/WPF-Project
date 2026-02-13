@@ -24,7 +24,26 @@ namespace CustomTextboxControl
 		{
 			InitializeComponent();
 
-			this.Icon = new BitmapImage(new Uri("D:\\Users\\wwwbl\\source\\repos\\WPF\\ico\\text_box.ico")); /*Добавление значка в главное окно WPF-приложения*/
+			try
+			{
+				this.Icon = new BitmapImage(new Uri("D:\\Users\\wwwbl\\source\\repos\\WPF\\ico\\text_box.ico"));
+			}
+			catch {}
+
+			this.Loaded += (s, e) => box1.txtInput.Focus();
+		}
+
+		private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.Key == Key.Enter)
+			{
+				UIElement elementWithFocus = Keyboard.FocusedElement as UIElement;
+				if (elementWithFocus != null)
+				{
+					elementWithFocus.MoveFocus(new TraversalRequest(FocusNavigationDirection.Next));
+				}
+				e.Handled = true;
+			}
 		}
 	}
 }
