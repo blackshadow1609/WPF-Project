@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="Binding/Binding.csproj" Id="3e917535-6091-499e-8b32-65d50b7e24db" />
   <Project Path="CustomTextboxControl/CustomTextboxControl.csproj" Id="5091b197-c93d-4444-9740-beee6b7bfc72" />
   <Project Path="Grid/Grid.csproj" Id="696c7828-1975-4f03-b8ea-3b7b98da21ce" />
   <Project Path="MenuBar/MenuBar.csproj" Id="362f264e-c47d-400e-896e-f977ba968d5c" />
