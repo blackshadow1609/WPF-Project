@@ -1,0 +1,21 @@
+﻿<Window x:Class="Dialogs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dialogs"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300"
+        FontSize="24">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Name="btnMessageBox" Content="MessageBox" Click="btnMessageBox_Click"/>
+        <Button Grid.Row="1" Name="btnOpenFile" Content="Open file dialog" Click="btnOpenFile_Click"/>
+        <Button Grid.Row="2" Name="btnOpenFolder" Content="Open folder dialog" Click="btnOpenFolder_Click"/>
+    </Grid>
+</Window>

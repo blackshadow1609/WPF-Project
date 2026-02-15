@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E917535-6091-499E-8B32-65D50B7E24DB}</ProjectGuid>
+    <ProjectGuid>{ADDADCCA-6242-4C99-9257-BF331D414B77}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Binding</RootNamespace>
-    <AssemblyName>Binding</AssemblyName>
+    <RootNamespace>IPadress</RootNamespace>
+    <AssemblyName>IPadress</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,9 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="bidding.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
