@@ -34,10 +34,12 @@
                 Click="btnAdd_Click"/>
         
         <Button Grid.Row="0" Grid.Column="1"
-                Name="btnDelete" Content="Del"/>
+                Name="btnDelete" Content="Del"
+                Click="btnDelete_Click"/>
         
         <Button Grid.Row="0" Grid.Column="2"
-                Name="btnClear" Content="Clr"/>
+                Name="btnClear" Content="Clr"
+                Click="btnClear_Click"/>
         </Grid>
 
         <ListBox Grid.Row="1" Grid.Column="0"

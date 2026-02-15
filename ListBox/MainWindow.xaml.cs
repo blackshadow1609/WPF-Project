@@ -27,7 +27,18 @@ namespace ListBox
 
 		private void btnAdd_Click(object sender, RoutedEventArgs e)
 		{
+			if(!listBox.Items.Contains(txtInput.Text))
+			listBox.Items.Add(txtInput.Text);
+		}
 
+		private void btnClear_Click(object sender, RoutedEventArgs e)
+		{
+			listBox.Items.Clear();
+		}
+
+		private void btnDelete_Click(object sender, RoutedEventArgs e)
+		{
+			listBox.Items.Remove(listBox.SelectedItem);
 		}
 	}
 }
